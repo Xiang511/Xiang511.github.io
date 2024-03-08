@@ -1,0 +1,35 @@
+---
+---
+
+@import 'main';
+
+// 引入自訂義字形
+$roboto-weights: (100, 300, 400, 500, 700, 900);
+
+$noto-sans-tc-font: 'Noto Sans TC', sans-serif;
+$noto-sans-tc-weights: interpolate(100, 900); // Full weight range
+
+body {
+  font-family: 'Noto Sans TC', 'Roboto', Helvetica, sans-serif;
+  font-weight: interpolate(
+    $roboto-weights $noto-sans-tc-weights
+  ); // Use interpolate for smooth transitions
+  font-display: swap; // Include for better rendering
+}
+
+/* Optional: Define styles for specific weights */
+h1 {
+  font-weight: 700; // Use a specific weight from $roboto-weights
+}
+p {
+  font-family: 'Noto Sans TC';
+  font-weight: 700; // Use a specific weight from $roboto-weights
+}
+// 消除a連結動態陰影
+.shimmer {
+  background: none;
+}
+.shimmer::before {
+  animation: shimmer 1.3s;
+  opacity: 0;
+}
