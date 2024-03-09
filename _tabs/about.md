@@ -4,13 +4,17 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-一位正在尋找未來工作的大學生。歡迎到我的部落格。
+I'm a university student looking for a future career. Welcome to my blog.
 
-在這裡，我會紀錄自己的學習日記或著是分享一些開源項目。
+Here, I will share some of my own projects. Feel free to leave your comments and discuss
 
-📃 我目前正在學習 Vue.js。
+📃 I’m currently learning Vue.js
 
-💬 我正在努力成為前端工程師。
+💬 I'm working towards becoming a front-end engineer.
+
+🎈 I’m looking to collaborate on new business ideas.
+
+
 
 ---
 ### 📈 Github State
