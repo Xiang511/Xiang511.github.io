@@ -10,7 +10,7 @@ $noto-sans-tc-font: 'Noto Sans TC', sans-serif;
 $noto-sans-tc-weights: interpolate(100, 900); // Full weight range
 
 body {
-  font-family: 'Noto Sans TC', 'Roboto', Helvetica, sans-serif;
+  font-family: 'Noto Sans TC', 'Roboto', sans-serif;
   font-weight: interpolate(
     $roboto-weights $noto-sans-tc-weights
   ); // Use interpolate for smooth transitions
@@ -23,7 +23,7 @@ h1 {
 }
 p {
   font-family: 'Noto Sans TC';
-  font-weight: 700; // Use a specific weight from $roboto-weights
+  font-weight: 500; // Use a specific weight from $roboto-weights
 }
 // 消除a連結動態陰影
 .shimmer {
