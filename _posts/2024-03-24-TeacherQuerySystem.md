@@ -1,7 +1,7 @@
 ---
 title:  Teacher Query System 
 author: LiHsiang
-date: 2023-12-02 2:00:00 +0800
+date: 2023-01-10 2:00:00 +0800
 categories: [Side Project,Website]
 tags: [HTML,CSS,Javascript,Jquery,JSP,Java,BootStrap5,Apache TomCat,Microsoft SQL Server]
 # pin: true
@@ -11,6 +11,7 @@ image:
 ---
 ![GitHub last commit](https://img.shields.io/github/last-commit/Xiang511/TeacherQuerySystem?style=for-the-badge&color=%23007396){: .normal }
 ![Github Created At](https://img.shields.io/github/created-at/Xiang511/TeacherQuerySystem?style=for-the-badge&color=%23007396){: .normal }
+![GitHub License](https://img.shields.io/github/license/XIang511/TeacherQuerySystem?style=for-the-badge&color=%23007396){: .normal }
 <a href="https://youtu.be/BjJkCcQfMJY">![Static Badge](https://img.shields.io/badge/Demo-YouTube-YouTube?style=for-the-badge&logo=youtube&color=red){: .normal }
 
 
@@ -69,14 +70,22 @@ image:
 
 #### 在 mssql設定管理員中 中開啟 TCP port 1443 , 並將服務重新啟動
 
-![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/aebf14ae-b66d-4dc3-a3dd-d8c3d91fbb8a){: .normal }
-![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/43f9e1c4-4325-48af-a0be-725d57e0122c){: .normal }
+![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/aebf14ae-b66d-4dc3-a3dd-d8c3d91fbb8a){: .normal }{: width="500" height="400" }
+![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/43f9e1c4-4325-48af-a0be-725d57e0122c){: .normal }{: width="500" height="400" }
   
 #### 在ssms中 新增使用者demo，密碼demo ，使用sql驗證登入
+---
 
-![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/2307f0cb-4aea-4ad9-b8a3-8940a1f3d83c){: .normal }
-![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/34b8e7eb-8eb5-4447-b56c-d59246967ba9){: .normal }
-![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/ba8ce5bc-a6ba-4e58-a292-6c44272d686b){: .normal }
+
+![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/2307f0cb-4aea-4ad9-b8a3-8940a1f3d83c){: .normal }{: width="500" height="400" }
+![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/34b8e7eb-8eb5-4447-b56c-d59246967ba9){: .normal }{: width="500" height="400" }
+![image](https://github.com/Xiang511/TeacherQuerySystem/assets/120042360/ba8ce5bc-a6ba-4e58-a292-6c44272d686b){: .normal }{: width="500" height="400" }
+
+## Demo
+---
+
+{% include embed/youtube.html id='BjJkCcQfMJY?si=JtM80u-UnLlk0GIf' %}
+
 
 
 
