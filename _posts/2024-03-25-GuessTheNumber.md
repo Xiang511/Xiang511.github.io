@@ -15,32 +15,63 @@ image:
 <a href="https://github.com/Xiang511/GuessTheNumber-UDP">![Static Badge](https://img.shields.io/badge/Github-demo?style=for-the-badge&logo=github&color=%23000){: .normal }
 
 
-1A2B-猜數字
-
-創建一個UDP_SERVER玩猜數字遊戲
+創建一個UDP_SERVER玩猜數字遊戲 
 
 最多可以三個人同時遊玩
 
-採計時制，可以比賽看誰先解完
+## Features
+- 最多可以三個人同時遊玩
+- 採計時制，可以比賽看誰先解完
 
-## 流程介紹
+## Process introduction
 
-1.首先用random產生一個答案
+- 首先用random產生一個答案
+- 客戶端傳值(4個數字)
+- Server判斷是否為正確格式
+- 判斷輸入的數字 位置且數字也對回傳A 位置錯但數字對回傳B 
+- 客戶端得到回覆(?A?B)
+- 以此類推直到猜中正確答案
+- 顯示花費多少時間
 
-2.客戶端傳值(4個數字)
+## Installation
 
-3.Server判斷是否為正確格式
+>  Option 1. [GitHub Fork](https://github.com/Xiang511/GuessTheNumber-UDP)
+{: .prompt-tip }
+>  Option 2. [Download Zip](https://github.com/Xiang511/GuessTheNumber-UDP)
+{: .prompt-tip }
 
-4.判斷輸入的數字 位置且數字也對回傳A 位置錯但數字對回傳B 
+## Usage
 
-5.客戶端得到回覆(?A?B)
-
-6.以此類推直到猜中正確答案
-
-7.顯示花費多少時間
-
-## 主要判斷式
+```console
+Server-Example: python demo2.py server 0.0.0.0
+```
+```console
+Client-Example: python demo2.py client 127.0.0.1 -p {port}
+```
+### Server
 ```python
+def server(interface, port):
+    th = []
+    for i in range(3):
+        server_sock.append(socket.socket(socket.AF_INET,socket.SOCK_DGRAM))
+        server_sock[i].bind((interface,port+i))
+        th.append(threading.Thread(target=server_action, args = (server_sock[i],i)))
+    for i in range(3):
+        th[i].start()
+    for i in range(3):
+        th[i].join()
+```
+### Server_Action
+```python
+def server_action(sock, number):
+    time_start = time.time()
+    print('Listening at', sock.getsockname())
+    print(sum1)
+    while True:
+        data, address = sock.recvfrom(MAX_BYTES)  
+        data = data.decode('ascii')
+       
+        print('Server {}:'.format(number)+'The client at {} says {!r}'.format(address, data))
         a = b = 0
         data = list(data)
         for i in range(4):
@@ -61,7 +92,49 @@ image:
             message = " You are right!!!!!"
             time_end = time.time()    #結束計時
             time_c= time_end - time_start   #執行所花時間
+
+            
+            print('time cost', time_c, 's')
+            print('Congratulations', sock.getsockname())
+            
+            sock.sendto(message.encode('ascii'), address)
+            sum = random.sample(range(1, 10), 4) 
+            
+            break
+
 ```
+
+### Client
+```python
+def client(hostname, port):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.connect((hostname, port)) # 要先跟server建立連線，之後send資料不須指定地址
+    print('Client socket name is {}'.format(sock.getsockname()))
+    
+    while True:
+        text = input("Please enter the number >>>: ")
+       
+        if text == "|exit|":
+            
+            print(sock.getsockname(),'has leave the game')
+            break
+
+        if len(text) != 4:
+            print("Wrong format,Please enter the correct format")
+            continue
+        if not text.isdecimal():
+            print("Wrong format,Please enter the correct format")
+            continue
+        data = text.encode('ascii')
+        sock.send(data) # sendto需指定接收ip，send不用(上面已經connect就可使用)
+
+        data = sock.recv(MAX_BYTES)
+        print('The server says {!r}'.format(data.decode('ascii')))
+        if data.decode('ascii') == "You are right!!!!!":
+            break
+```
+
+
 
 ## Demo
 ![image](https://github.com/Xiang511/GuessTheNumber-UDP/assets/120042360/aa53a0f3-691a-454f-a549-71b2ff904ac7)
