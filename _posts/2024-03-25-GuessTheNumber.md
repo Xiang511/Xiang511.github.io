@@ -1,7 +1,7 @@
 ---
 title:  GuessTheNumber-UDP 
 author: LiHsiang
-date: 2022-1-16 2:00:00 +0800
+date: 2022-01-16 2:00:00 +0800
 categories: [Side Project,UDP]
 tags: [Python,UDP,socket,threading]
 # pin: true
