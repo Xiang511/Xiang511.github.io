@@ -1,7 +1,7 @@
 ---
 title:  畢業專題 - Virsody 和 Unity 虛擬展間
 author: LiHsiang
-date: 2023-12-25 2:00:00 +0800
+date: 2024-01-05 2:00:00 +0800
 categories: [Graduation Project,Virsody & Unity虛擬展間]
 tags: [Virsody,Unity,SketchFab,blender,C#]
 pin: true
