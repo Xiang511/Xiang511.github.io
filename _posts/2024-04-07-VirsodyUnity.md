@@ -81,12 +81,7 @@ Unity 平台則是使用VR來進行開發使用設備為Oculus的Quest2，透過
 [UnityVR展間-Demo](https://www.youtube.com/watch?v=eMP0fmyXkTM)
 
 
-
-## 六、時間安排
-
-![](assets/img/ai-innovation.png){:.normal}
-
-## 七、參考資料
+## 六、參考資料
 [1]	 C#教學: [https://unity.com/how-to/learning-c-sharp-unity-beginners](https://unity.com/how-to/learning-c-sharp-unity-beginners)
 
 [2]	 VR教學: [https://learn.unity.com/](https://learn.unity.com/)
