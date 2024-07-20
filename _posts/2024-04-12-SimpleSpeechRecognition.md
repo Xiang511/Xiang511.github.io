@@ -2,7 +2,7 @@
 title:  Simple-Speech-Recognition
 author: LiHsiang
 date: 2022-01-12 2:00:00 +0800
-categories: [Side Project,Speech-Recognition]
+categories: [Course Project,Speech-Recognition]
 tags: [Python,Tkinter]
 # pin: true
 image:
