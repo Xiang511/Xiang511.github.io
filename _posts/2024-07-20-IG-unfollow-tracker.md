@@ -3,7 +3,7 @@ title:  Instagram-Follow-Back-Tracker
 author: LiHsiang
 date: 2024-07-17 10:00:00 +0800
 categories: [Side Project,Website]
-tags: [HTML,CSS,Javascript,Instagram,Instagram-follower]
+tags: [HTML,CSS,Javascript,Instagram,Instagram-follower,Threads,Threads-follower]
 # pin: true
 image:
   path: /assets/img/Instagram-Follow-Back-Tracker.png
@@ -19,6 +19,7 @@ This method utilizes Instagram's "Download Your Data" feature to retrieve a list
 
 - [x] Optimize website interface
 - [x] See who's not following me back on Instagram
+- [x] See who's not following me back on Threads
 - [ ] Add a timeline to show how long a user has been following someone
 
 
@@ -26,13 +27,24 @@ This method utilizes Instagram's "Download Your Data" feature to retrieve a list
 
 ### Preparation
 
-Navigate to the Account Management Center and Locate Your Information and Privacy Page
+Navigate to the Account Management Center and Locate [Your Information and Privacy Page](https://accountscenter.instagram.com/info_and_permissions/)
 
-Click "Download information" > partail Information > Followers and followers list (only) > data range : all the time > Format select json
+> Instagram 
+>
+> Click "Download information"  -> partail Information  ->  Followers and followers list (only) 
+>
+>  data range :  All the time   -> Format select  JSON 
+{: .prompt-tip }
 
-```
-https://accountscenter.instagram.com/info_and_permissions/
-```
+
+
+> Threads
+>
+> Click "Download Information"  -> partail Information  ->  Threads (only)   
+>
+> data range:  All the time   -> Select format:  JSON 
+{: .prompt-tip }
+
 
 ### Process Downloaded Data
 
@@ -46,9 +58,14 @@ After the above steps are ready, you can go to the website and upload your JSON 
 
 {% include embed/youtube.html id='0XyRyZL3BO4?si=EXrGkiY3ETAXmoGF' %}
 
-> Project Link
+> Website Link
 >
 > [https://xiang511.com/Instagram-Follow-Back-Tracker/zh-TW.html](https://xiang511.com/Instagram-Follow-Back-Tracker/zh-TW.html)
+{: .prompt-info }
+
+> Project Link
+>
+> [https://github.com/Xiang511/Instagram-Follow-Back-Tracker](https://github.com/Xiang511/Instagram-Follow-Back-Tracker)
 {: .prompt-info }
 
 ## Data Privacy Policy
