@@ -4,7 +4,7 @@ author: LiHsiang
 date: 2024-01-05 2:00:00 +0800
 categories: [Graduation Project,Virsody & Unity虛擬展間]
 tags: [Virsody,Unity,SketchFab,blender,C#]
-pin: true
+# pin: true
 image:
   path: /assets/img/AIC.png
   lqip: /assets/img/AIC.png
