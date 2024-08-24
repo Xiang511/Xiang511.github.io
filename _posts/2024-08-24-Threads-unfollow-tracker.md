@@ -4,7 +4,7 @@ author: LiHsiang
 date: 2024-08-20 17:00:00 +0800
 categories: [Side Project,Website]
 tags: [HTML,CSS,Javascript,NPM,Node.js,Threads,Threads-follower]
-# pin: true
+pin: true
 image:
   path: /assets/img/Threads-follower.png
   lqip: /assets/img/Threads-follower.png
