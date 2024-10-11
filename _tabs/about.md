@@ -4,26 +4,15 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I'm a university student looking for a future career. Welcome to my blog.
+![](https://komarev.com/ghpvc/?username=Xiang511&style=for-the-badge&color=41B883){: .normal }
 
-Here, I will share some of my own projects. Feel free to leave your comments and discuss
+[![wakatime](https://wakatime.com/badge/user/ea5be8e3-8ab9-4cb9-bb86-c46e807db00c.svg?style=for-the-badge&color=41B883)](https://wakatime.com/@ea5be8e3-8ab9-4cb9-bb86-c46e807db00c){: .normal }
 
-📃 I’m currently learning Vue.js
+[![roadmap.sh](https://roadmap.sh/card/wide/67029cfffb4be684db090dd4?variant=light)](https://roadmap.sh){: .normal }
 
-💬 I'm working towards becoming a front-end engineer.
+![](https://raw.githubusercontent.com/Xiang511/Xiang511/main/profile-summary-card-output/vue/0-profile-details.svg){: .normal }
 
-🎈 I’m looking to collaborate on new business ideas.
+![](https://raw.githubusercontent.com/Xiang511/Xiang511/main/profile-summary-card-output/vue/3-stats.svg){: .normal }
+&ensp;&ensp;![](https://raw.githubusercontent.com/Xiang511/Xiang511/main/profile-summary-card-output/vue/1-repos-per-language.svg){: .normal }
 
 
-
----
-### 📈 Github State
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Xiang511&theme=vue){: .left }
-
-![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Xiang511&theme=vue){: .normal }
-&ensp;&ensp;![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Xiang511&theme=vue&utcOffset=8){: .normal }
-
-### 🐍 Github Snake
-<picture>
-  <img style="width:100%; margin:-0.7em" alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Xiang511/snk/output/github-contribution-grid-snake.svg">
-</picture>
