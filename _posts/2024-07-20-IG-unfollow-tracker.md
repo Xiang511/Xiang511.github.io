@@ -4,7 +4,7 @@ author: LiHsiang
 date: 2024-07-17 10:00:00 +0800
 categories: [Side Project,Website]
 tags: [HTML,CSS,Javascript,Instagram,Instagram-follower,Threads,Threads-follower]
-# pin: true
+pin: true
 image:
   path: /assets/img/Instagram-Follow-Back-Tracker.png
   lqip: /assets/img/Instagram-Follow-Back-Tracker.png
