@@ -59,8 +59,8 @@ contributions-chart.js    # Contribution heatmap rendering
 ```
 
 ## Advanced Animation Options (exportReplayAnimation)
+
 | Option | Default | Description |
-|--------|---------|-------------|
 | `stepSeconds` | 1 | Seconds per logical step (UI maps speed = 1/stepSeconds) |
 | `fadeDuration` | 0.25 | Color / text fade-in duration per step |
 | `simultaneousFlood` | true | If true flood reveals appear together; false = staggered |
@@ -68,16 +68,22 @@ contributions-chart.js    # Contribution heatmap rendering
 | `loop` | true | Auto replay animation | 
 
 ## Solver Logic Summary
+
 - Basic: if number = flagged → open others; if flagged + hidden = number → flag hidden.
+
 - Subset Difference: If constraint A ⊆ B and same mine count → (B \ A) safe; if (B.mines - A.mines) = |B \ A| then (B \ A) all mines.
+
 - Group Enumeration: Merge overlapping constraints, enumerate groups with ≤12 unknowns, count valid assignments for probabilities.
+
 - Probabilistic Guess: pick cell with lowest mine probability (tie-break: farther from center / random), reducing forced blind luck.
 
 ## Development Notes
+
 - Theme + revealed cell blending in `svg-creator.js`.
 - Solver internals in `auto-player.js`; you can extend with SAT / ILP or global probability models.
 
 ## Inspiration / References
+
 - [GitHub Mines Browser Extension](https://github.com/bgonp/github-mines-extension)
 - [GitHub Contributions API v4](https://github.com/grubersjoe/github-contributions-api)
 - [snk](https://github.com/Platane/snk)
@@ -86,3 +92,12 @@ contributions-chart.js    # Contribution heatmap rendering
 
 This project is published under Apache-2.0 license
 
+> Website Link
+>
+> [https://xiang511.com/GitHub-Contribution-Minesweeper/index.html](https://xiang511.com/GitHub-Contribution-Minesweeper/index.html)
+{: .prompt-info }
+
+> Project Link
+>
+> [https://github.com/Xiang511/GitHub-Contribution-Minesweeper](https://github.com/Xiang511/GitHub-Contribution-Minesweeper)
+{: .prompt-info }
